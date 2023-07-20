@@ -1,0 +1,47 @@
+Server:
+  RunMode: debug
+  HttpPort: :8080
+  UserServiceAddr: 127.0.0.1:8081
+  VideoServiceAddr: 127.0.0.1:8082
+  CommentServiceAddr: 127.0.0.1:8083
+  MessageServiceAddr: 127.0.0.1:8084
+  Timeout: 86400 #seconds
+  EtcdAddress: 127.0.0.1:2379
+  FeedCount: 5
+  PprofSwitch: off
+
+Database:
+  DBType: mysql
+  UserName: root
+  Password: 123456
+  Host: 127.0.0.1
+  DBName: runedance
+  Charset: utf8mb4
+  ParseTime: True
+
+JWT:
+  Secret: jwt secret
+  Expires: 24 #hours
+
+COS:
+  SecretID: your secret id
+  SecretKey: your secret key
+  VideoBucket: cos video bucket address
+  CoverBucket: cos cover bucket address
+
+Redis:
+  Address: 127.0.0.1
+  MaxIdle: 100
+  MaxActive: 0
+  ExpireTime: 24 #hours
+  MaxRandAddTime: 1 #hours
+  BloomOpen: false
+
+Pulsar:
+  URL: pulsar url
+  OperationTimeout: 30
+  ConnectionTimeout: 30
+
+MongoDB:
+  URl: mongodb url
+  DataBase: sensitive_words
